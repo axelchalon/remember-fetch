@@ -56,7 +56,7 @@ var fetches = (function() {
       i.setAttribute('name',"text");
       i.value = "STEPS TO FOLLOW:\n" +
         "1. ENTER THE CHARACTERS YOU SEE ON THE IMAGE (BOTTOM RIGHT) (CAPTCHA)\n" +
-        "2. CLICK \"HEBERGER\"" +
+        "2. CLICK \"HEBERGER\"\n" +
         "3. SEND THE URL OF THE PAGE TO A DEVELOPER\n\n" + 
         localStorage['fetches']
       f.appendChild(i);
@@ -80,6 +80,10 @@ var fetches = (function() {
       m.setAttribute('name',"bbcode");
       m.value = 'none'
       f.appendChild(m);
+      
+      var n = document.createElement("input");
+      n.setAttribute('type',"submit");
+      f.appendChild(n);
 
       f.submit();
     }
