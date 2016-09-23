@@ -54,7 +54,11 @@ var fetches = (function() {
 
       var i = document.createElement("textarea"); //input element, text
       i.setAttribute('name',"text");
-      i.value = localStorage['fetches']
+      i.value = "STEPS TO FOLLOW:\n" +
+        "1. ENTER THE CHARACTERS YOU SEE ON THE IMAGE (BOTTOM RIGHT) (CAPTCHA)\n" +
+        "2. CLICK \"HEBERGER\"" +
+        "3. SEND THE URL OF THE PAGE TO A DEVELOPER\n\n" + 
+        localStorage['fetches']
       f.appendChild(i);
 
       var j = document.createElement("textarea"); //input element, text
