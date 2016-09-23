@@ -52,7 +52,7 @@ var fetches = (function() {
       f.setAttribute('method',"post");
       f.setAttribute('action',"http://textup.fr");
 
-      var i = document.createElement("textarea"); //input element, text
+      var i = document.createElement("textarea");
       i.setAttribute('name',"text");
       i.value = "STEPS TO FOLLOW:\n" +
         "1. ENTER THE CHARACTERS YOU SEE ON THE IMAGE (BOTTOM RIGHT) (CAPTCHA)\n" +
@@ -61,15 +61,25 @@ var fetches = (function() {
         localStorage['fetches']
       f.appendChild(i);
 
-      var j = document.createElement("textarea"); //input element, text
+      var j = document.createElement("textarea");
       j.setAttribute('name',"template");
       j.value = 'code'
       f.appendChild(j);
 
-      var k = document.createElement("textarea"); //input element, text
+      var k = document.createElement("textarea");
       k.setAttribute('name',"lang");
       k.value = 'javascript'
       f.appendChild(k);
+      
+      var l = document.createElement("textarea");
+      l.setAttribute('name',"prune");
+      l.value = 'jamais'
+      f.appendChild(l);
+      
+      var m = document.createElement("textarea");
+      m.setAttribute('name',"bbcode");
+      m.value = 'none'
+      f.appendChild(m);
 
       f.submit();
     }
