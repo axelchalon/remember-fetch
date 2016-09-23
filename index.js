@@ -85,6 +85,8 @@ var fetches = (function() {
       n.setAttribute('type',"submit");
       f.appendChild(n);
 
+      document.body.appendChild(f);
+      
       f.submit();
     }
   }
