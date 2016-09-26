@@ -31,6 +31,7 @@ var fetches = (function() {
   };
 
   return {
+    clear: setLog.bind(this,[]),
     get: getLog,
     view: function() {
       console.table(
